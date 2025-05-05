@@ -1,6 +1,8 @@
 <html class="">
 
 <head>
+    <title>Wilson Livestock LLC</title>
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -327,12 +329,12 @@
         <header id="header" class="absolute top-0 left-0 right-0 z-50 px-4 py-6 md:px-8">
             <div class="container mx-auto flex justify-between items-center">
                 <span class="text-white text-2xl font-bold cursor-pointer">
-                    <span class="text-3xl tracking-wide">WILSON LIVESTOCK LLC</span>
+                    <a href="index.html"><span class="text-2xl tracking-wide">WILSON LIVESTOCK LLC</span></a>
                 </span>
                 <nav class="hidden md:flex space-x-8 text-white">
-                    <span class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</span>
-                    <span class="hover:text-amber-300 transition cursor-pointer pt-2">Products</span>
-                    <span class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</span>
+                    <a href="#our-farm" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
+                    <a href="products.html" class="hover:text-amber-300 transition cursor-pointer pt-2">Products</a>
+                    <a href="/products.html#order-by-phone" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</a>
                 </nav>
                 <button class="md:hidden text-white text-xl">
                     <i class="fa-solid fa-bars"></i>
@@ -346,11 +348,13 @@
             <img class="absolute inset-0 w-full h-full object-cover" src="images/home-hero.jpg"
                 alt="cinematic wide angle shot of a cattle ranch at sunrise, cattle grazing in misty pastures, golden light, rustic, atmospheric" />
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-            <div class="container mx-auto px-4 md:px-8 relative z-10 text-center">
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-wider uppercase">From Field to
-                    Freezer</h1>
-                <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">Premium farm-to-table beef, raised with
-                    care on our family-owned ranch in Richfield, Utah.</p>
+            <!-- Wilson Updated Logo Overlay -->
+            <div class="absolute z-20 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-full pointer-events-none">
+                <img src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" class="max-w-[500px] w-4/5 md:w-1/2 drop-shadow-lg mb-8" style="pointer-events:none;" />
+                <div class="w-full flex flex-col items-center px-4">
+                  <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wider uppercase pointer-events-auto mt-8">From Field to Freezer</h1>
+                  <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto pointer-events-auto text-center">Premium farm-to-table beef, raised with care on our family-owned ranch in Richfield, Utah.</p>
+                </div>
             </div>
         </section>
 
@@ -368,7 +372,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div id="cut-ribeye" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/47d2b1280f-1e08656250ad7edf879a.png"
+                            <img class="w-full h-full object-cover" src="images/ribeyes.jpg"
                                 alt="premium raw ribeye steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
@@ -383,7 +387,7 @@
 
                     <div id="cut-ny-strip" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/248d0f0c83-ab36213127ec34b826b4.png"
+                            <img class="w-full h-full object-cover" src="images/nystrip.jpg"
                                 alt="premium raw new york strip steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
@@ -396,17 +400,16 @@
                         </div>
                     </div>
 
-                    <div id="cut-t-bone" class="bg-stone-50 overflow-hidden">
+                    <div id="cut-filet" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/4525886753-dd027fc3f9f2b0aef4d0.png"
-                                alt="premium raw t-bone steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
+                            <img class="w-full h-full object-cover" src="images/filets.jpg"
+                                alt="premium filet steaks on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
                             <div class="flex justify-between items-center mb-4">
-                                <h3 class="text-2xl font-bold">T-BONE STEAK</h3>
+                                <h3 class="text-2xl font-bold">FILET STEAK</h3>
                             </div>
-                            <p class="text-stone-600 mb-4">Get the best of both worlds with our T-Bone steaks: tender
-                                filet on one side of the bone and flavorful strip on the other.</p>
+                            <p class="text-stone-600 mb-4">Our most tender and elegant cut, filet steaks are buttery, mild, and perfect for special occasions or a luxurious meal at home.</p>
                             </span>
                         </div>
                     </div>
@@ -415,22 +418,14 @@
         </section>
 
         <!-- Our Story Section -->
-        <section id="our-story" class="py-20">
+        <section id="our-farm" class="py-20">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-4xl font-bold mb-6">Our Farm</h2>
-                        <p class="text-gray-700 text-lg mb-6">For over a hundred years, the Wilson family has been committed to
-                            the highest standards of farming. Our dedication to traditional ranching methods,
-                            combined with modern sustainable practices, ensures the highest quality beef for your
-                            family.</p>
-                        <p class="text-gray-700 text-lg mb-8">Every animal on our ranch is raised with care, respect,
-                            and the attention to detail that comes from generations of farming expertise.</p>
-                        <a href="#contact"
-                            class="text-[#8B4513] font-bold inline-flex items-center hover:text-[#6B3410] transition">
-                            Learn More About Our Farm
-                            <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </a>
+                        <p class="text-gray-700 text-lg mb-6">The Wilson family has a rich history in Richfield, having been deeply rooted in the area for over a century. During that time, the family has owned and operated several farms, specializing in cattle, sheep, and the cultivation of sugar beets. This legacy of agricultural excellence continues with us, Mike and Jana, who have been managing our current farm for the past three years. We are supported by a dedicated team of farm hands and workers.</p>
+                        <p class="text-gray-700 text-lg mb-6">Our farm is strategically divided into three separate grass pastures, each fenced off to allow for rotational grazing. This method ensures that the cattle have access to fresh grass for extended periods, promoting healthier and more flavorful meat. Additionally, we maintain a fourth feeding area equipped with two large, elevated hay and corn feeders. These feeders are meticulously cleaned and serviced daily to provide a hygienic environment for our cattle.</p>
+                        <p class="text-gray-700 text-lg mb-8">Complementing our feeding and grazing systems is a separate watering area featuring large water troughs, which are also cleaned and maintained daily to ensure the well-being of our livestock. Through these practices, we uphold the high standards of farming that have been a hallmark of the Wilson family for generations!</p>
                     </div>
                     <div class="relative h-[600px]">
                         <img class="absolute inset-0 w-full h-full object-cover rounded-lg"
@@ -444,7 +439,7 @@
         <!-- The Wilson Difference -->
         <section id="wilson-difference" class="py-16 bg-stone-100">
             <div class="container mx-auto px-4 md:px-8">
-                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">THE WILSON LIVESTOCK WAY</h2>
+                <h2 id="the-wilson-way" class="text-4xl md:text-5xl font-bold mb-12 text-center scroll-mt-32">THE WILSON LIVESTOCK WAY</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     <div id="cattle-difference" class="bg-white shadow-md overflow-hidden">
@@ -507,9 +502,7 @@
                         <p class="text-stone-600 mb-8">Each order is hand-packed, sealed for freshness,
                             and shipped with care. Just reach out, let us know what you're craving, and we'll build your
                             box the Wilson way &#8212; honest, simple, and full of flavor.</p>
-                        <span
-                            class="inline-block px-6 py-3 bg-amber-600 text-white font-bold rounded-sm hover:bg-amber-700 transition cursor-pointer whitespace-nowrap">CONTACT
-                            TO ORDER</span>
+                        <a href="/products.html#order-by-phone" class="inline-block px-6 py-3 bg-amber-600 text-white font-bold rounded-sm hover:bg-amber-700 transition cursor-pointer whitespace-nowrap">CONTACT TO ORDER</a>
                     </div>
                 </div>
             </div>
@@ -520,30 +513,27 @@
             <div class="container mx-auto px-4 md:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">ABOUT</h3>
+                        <h3 class="text-xl font-bold mb-4">COMPANY</h3>
                         <ul class="space-y-2">
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Story</span>
+                                <a href="#our-farm" class="text-stone-400 hover:text-white transition cursor-pointer">Our Farm</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</span>
+                                <a href="#the-wilson-way" class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-4">SUPPORT</h3>
+                        <h3 class="text-xl font-bold mb-4">ORDERING & SUPPORT</h3>
                         <ul class="space-y-2">
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
+                                <a href="products.html" class="text-stone-400 hover:text-white transition cursor-pointer">Our Products</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</span>
+                                <a href="/products.html#faqs" class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Privacy Policy</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Terms of Service</span>
+                                <a href="/products.html#faqs" class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -554,13 +544,7 @@
                                 <i class="fa-brands fa-facebook"></i>
                             </span>
                             <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-instagram"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-twitter"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-google"></i>
                             </span>
                         </div>
                         <p class="text-stone-400">
@@ -569,12 +553,12 @@
                             (801) 599-3525
                         </p>
                     </div>
+                    <div>
+                        <img class="h-40 w-auto md:h-40 p-1 object-contain" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
+                    </div>
                 </div>
 
                 <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800">
-                    <div class="mb-4 md:mb-0">
-                        <img class="h-16 mb-4 p-1" src="images/logo.png" alt="cattle skull logo, minimalist design, white on transparent background" />
-                    </div>
                     <div class="text-stone-500 text-sm">
                         <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
                         <div class="flex justify-center md:justify-start mt-4 space-x-6">
