@@ -53,9 +53,9 @@
                     <a href="index.html"><span class="text-2xl tracking-wide">WILSON LIVESTOCK LLC</span></a>
                 </span>
                 <nav class="hidden md:flex space-x-8 text-white">
-                    <a href="index.html#our-story" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
+                    <a href="/index.html#our-farm" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
                     <a href="products.html" class="hover:text-amber-300 transition cursor-pointer pt-2 text-amber-300 font-bold">Products</a>
-                    <span class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</span>
+                    <a href="/products.html#order-by-phone" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</a>
                 </nav>
                 <button class="md:hidden text-white text-xl">
                     <i class="fa-solid fa-bars"></i>
@@ -78,7 +78,7 @@
         <section class="pt-8 pb-20">
             <div class="container mx-auto px-4 max-w-3xl">
                 <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center">Available Beef Cuts</h2>
-                <ul class="space-y-8">
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Product Cards -->
                     <!-- For each cut, use a placeholder or available image -->
                     <li>
@@ -149,71 +149,136 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer id="footer" class="bg-black text-white py-12">
-            <div class="container mx-auto px-4 md:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">COMPANY</h3>
-                        <ul class="space-y-2">
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Story</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">ORDERING &amp; SUPPORT</h3>
-                        <ul class="space-y-2">
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Products</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Order</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">FOLLOW</h3>
-                        <div class="flex space-x-4 mb-4">
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-facebook"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-instagram"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-twitter"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-youtube"></i>
-                            </span>
-                        </div>
-                        <p class="text-stone-400">
-                            Wilson Livestock LLC<br>
-                            Richfield, Utah<br>
-                            (801) 599-3525
-                        </p>
-                    </div>
-                    <div class="flex flex-col justify-between">
-                        <img class="h-24 w-auto md:h-28 mx-auto mb-8" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
-<hr class="border-t border-stone-800 my-6">
-<div class="text-stone-500 text-sm text-center">
-    <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
-    <div class="flex justify-center mt-4 space-x-6">
-        <span class="uppercase tracking-wider">TRUST</span>
-        <span class="uppercase tracking-wider">TRACEABLE</span>
-    </div>
-</div>
-                    </div>
-                </div>
+        <!-- Order by Phone Section -->
+        <section id="order-by-phone" class="py-16 bg-white">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+              <!-- Image -->
+              <div class="flex-1 flex justify-center items-center mb-8 md:mb-0">
+                <img src="images/beef-cuts.jpg" alt="Beef Cuts Diagram" class="rounded-lg shadow w-full max-w-md object-contain" />
+              </div>
+              <!-- Order by Phone Description -->
+              <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Order by Phone</h2>
+                <p class="text-lg md:text-xl text-stone-700 mb-6">Ready to order or have questions about our beef? Give us a call and we'll help you create a custom package that's perfect for your needs. Our team is happy to walk you through the options and answer any questions you have—personally, over the phone.</p>
+                <a href="tel:801-599-3525" class="inline-block text-3xl md:text-4xl font-bold text-amber-600 hover:text-amber-700 transition mb-2">(801) 599-3525</a>
+                <div class="text-stone-500 text-sm mt-2">8am - 5pm MT, Monday through Friday.</div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-stone-50">
+          <div class="container mx-auto px-4">
+            <h2 id="faqs" class="text-3xl md:text-4xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+              <!-- FAQ Column -->
+              <div class="flex-1 space-y-8">
+                <div>
+                  <h3 class="text-xl font-semibold text-stone-800 mb-2">Where does your beef come from?</h3>
+                  <p class="text-stone-700">All our beef is pasture-raised on our family farm, ensuring quality, flavor, and responsible stewardship of the land. We take pride in raising our cattle with care from start to finish.</p>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-stone-800 mb-2">How do I place an order?</h3>
+                  <p class="text-stone-700">To place an order, simply call us at <a href='tel:801-599-3525' class='text-amber-600 hover:text-amber-700 font-semibold'>(801) 599-3525</a>. We'll help you create a custom package and answer any questions you have directly over the phone.</p>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-stone-800 mb-2">Can I request special cuts or custom packages?</h3>
+                  <p class="text-stone-700">Absolutely! All our packages are custom, built on your specific selections. When you call to order, let us know what you'd like in your package and we'll build it just for you.</p>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-stone-800 mb-2">What if I have questions before ordering?</h3>
+                  <p class="text-stone-700">If you have any questions before ordering, you can call us at <a href='tel:801-599-3525' class='text-amber-600 hover:text-amber-700 font-semibold'>(801) 599-3525</a> or use the contact form on this page. We're happy to help!</p>
+                </div>
+              </div>
+              <!-- Contact Form Column -->
+              <div class="flex-1 bg-white rounded-lg shadow p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Questions? Contact Us!</h3>
+                <form method="POST" action="#" class="space-y-6">
+                  <div>
+                    <label for="faq-name" class="block mb-2 font-semibold text-stone-700">Name</label>
+                    <input type="text" id="faq-name" name="name" required class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                  </div>
+                  <div>
+                    <label for="faq-email" class="block mb-2 font-semibold text-stone-700">Email</label>
+                    <input type="email" id="faq-email" name="email" required class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                  </div>
+                  <div>
+                    <label for="faq-phone" class="block mb-2 font-semibold text-stone-700">Phone Number <span class="text-stone-400 font-normal">(optional)</span></label>
+                    <input type="tel" id="faq-phone" name="phone" class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                  </div>
+                  <div>
+                    <label for="faq-message" class="block mb-2 font-semibold text-stone-700">Message</label>
+                    <textarea id="faq-message" name="message" rows="4" required class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-600"></textarea>
+                  </div>
+                  <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded transition">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <!-- Footer -->
+                <footer id="footer" class="bg-black text-white py-12">
+                    <div class="container mx-auto px-4 md:px-8">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">COMPANY</h3>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <a href="/index.html#our-farm" class="text-stone-400 hover:text-white transition cursor-pointer">Our Farm</a>
+                                    </li>
+                                    <li>
+                                        <a href="/index.html#the-wilson-way" class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">ORDERING & SUPPORT</h3>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Products</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">FOLLOW</h3>
+                                <div class="flex space-x-4 mb-4">
+                                    <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </span>
+                                    <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
+                                        <i class="fa-brands fa-google"></i>
+                                    </span>
+                                </div>
+                                <p class="text-stone-400">
+                                    Wilson Livestock LLC<br>
+                                    Richfield, Utah<br>
+                                    (801) 599-3525
+                                </p>
+                            </div>
+                            <div>
+                                <img class="h-40 w-auto md:h-40 p-1 object-contain" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800">
+                            <div class="text-stone-500 text-sm">
+                                <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
+                                <div class="flex justify-center md:justify-start mt-4 space-x-6">
+                                    <span class="uppercase tracking-wider">TRUST</span>
+                                    <span class="uppercase tracking-wider">TRACEABLE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
     </div>
 </body>
 </html>

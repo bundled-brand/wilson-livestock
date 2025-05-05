@@ -1,6 +1,7 @@
 <html class="">
 
 <head>
+    <title>Wilson Livestock LLC</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -331,9 +332,9 @@
                     <a href="index.html"><span class="text-2xl tracking-wide">WILSON LIVESTOCK LLC</span></a>
                 </span>
                 <nav class="hidden md:flex space-x-8 text-white">
-                    <a href="#our-story" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
+                    <a href="#our-farm" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
                     <a href="products.html" class="hover:text-amber-300 transition cursor-pointer pt-2">Products</a>
-                    <span class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</span>
+                    <a href="/products.html#order-by-phone" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</a>
                 </nav>
                 <button class="md:hidden text-white text-xl">
                     <i class="fa-solid fa-bars"></i>
@@ -371,7 +372,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div id="cut-ribeye" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/47d2b1280f-1e08656250ad7edf879a.png"
+                            <img class="w-full h-full object-cover" src="images/ribeyes.jpg"
                                 alt="premium raw ribeye steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
@@ -386,7 +387,7 @@
 
                     <div id="cut-ny-strip" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/248d0f0c83-ab36213127ec34b826b4.png"
+                            <img class="w-full h-full object-cover" src="images/nystrip.jpg"
                                 alt="premium raw new york strip steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
@@ -399,17 +400,16 @@
                         </div>
                     </div>
 
-                    <div id="cut-t-bone" class="bg-stone-50 overflow-hidden">
+                    <div id="cut-filet" class="bg-stone-50 overflow-hidden">
                         <div class="h-80 overflow-hidden">
-                            <img class="w-full h-full object-cover" src="images/4525886753-dd027fc3f9f2b0aef4d0.png"
-                                alt="premium raw t-bone steak on dark stone surface, professional food photography, high-end, detailed meat texture" />
+                            <img class="w-full h-full object-cover" src="images/filets.jpg"
+                                alt="premium filet steaks on dark stone surface, professional food photography, high-end, detailed meat texture" />
                         </div>
                         <div class="p-6">
                             <div class="flex justify-between items-center mb-4">
-                                <h3 class="text-2xl font-bold">T-BONE STEAK</h3>
+                                <h3 class="text-2xl font-bold">FILET STEAK</h3>
                             </div>
-                            <p class="text-stone-600 mb-4">Get the best of both worlds with our T-Bone steaks: tender
-                                filet on one side of the bone and flavorful strip on the other.</p>
+                            <p class="text-stone-600 mb-4">Our most tender and elegant cut, filet steaks are buttery, mild, and perfect for special occasions or a luxurious meal at home.</p>
                             </span>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
         </section>
 
         <!-- Our Story Section -->
-        <section id="our-story" class="py-20">
+        <section id="our-farm" class="py-20">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
@@ -439,7 +439,7 @@
         <!-- The Wilson Difference -->
         <section id="wilson-difference" class="py-16 bg-stone-100">
             <div class="container mx-auto px-4 md:px-8">
-                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">THE WILSON LIVESTOCK WAY</h2>
+                <h2 id="the-wilson-way" class="text-4xl md:text-5xl font-bold mb-12 text-center scroll-mt-32">THE WILSON LIVESTOCK WAY</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     <div id="cattle-difference" class="bg-white shadow-md overflow-hidden">
@@ -502,9 +502,7 @@
                         <p class="text-stone-600 mb-8">Each order is hand-packed, sealed for freshness,
                             and shipped with care. Just reach out, let us know what you're craving, and we'll build your
                             box the Wilson way &#8212; honest, simple, and full of flavor.</p>
-                        <span
-                            class="inline-block px-6 py-3 bg-amber-600 text-white font-bold rounded-sm hover:bg-amber-700 transition cursor-pointer whitespace-nowrap">CONTACT
-                            TO ORDER</span>
+                        <a href="/products.html#order-by-phone" class="inline-block px-6 py-3 bg-amber-600 text-white font-bold rounded-sm hover:bg-amber-700 transition cursor-pointer whitespace-nowrap">CONTACT TO ORDER</a>
                     </div>
                 </div>
             </div>
@@ -518,24 +516,24 @@
                         <h3 class="text-xl font-bold mb-4">COMPANY</h3>
                         <ul class="space-y-2">
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Story</span>
+                                <a href="#our-farm" class="text-stone-400 hover:text-white transition cursor-pointer">Our Farm</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</span>
+                                <a href="#the-wilson-way" class="text-stone-400 hover:text-white transition cursor-pointer">Why Wilson</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-4">ORDERING &amp; SUPPORT</h3>
+                        <h3 class="text-xl font-bold mb-4">ORDERING & SUPPORT</h3>
                         <ul class="space-y-2">
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Products</span>
+                                <a href="products.html" class="text-stone-400 hover:text-white transition cursor-pointer">Our Products</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Order</span>
+                                <a href="/products.html#faqs" class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
+                                <a href="/products.html#faqs" class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -546,13 +544,7 @@
                                 <i class="fa-brands fa-facebook"></i>
                             </span>
                             <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-instagram"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-twitter"></i>
-                            </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
-                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-google"></i>
                             </span>
                         </div>
                         <p class="text-stone-400">
@@ -561,16 +553,15 @@
                             (801) 599-3525
                         </p>
                     </div>
+                    <div>
+                        <img class="h-40 w-auto md:h-40 p-1 object-contain" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
+                    </div>
                 </div>
 
                 <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800">
-                    <div class="mb-4 md:mb-0">
-                        <img class="h-24 w-auto md:h-28 mx-auto mb-8" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
-                    </div>
-                    <hr class="border-t border-stone-800 my-6">
-                    <div class="text-stone-500 text-sm text-center">
+                    <div class="text-stone-500 text-sm">
                         <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
-                        <div class="flex justify-center mt-4 space-x-6">
+                        <div class="flex justify-center md:justify-start mt-4 space-x-6">
                             <span class="uppercase tracking-wider">TRUST</span>
                             <span class="uppercase tracking-wider">TRACEABLE</span>
                         </div>
