@@ -1,6 +1,7 @@
 <html class="">
 
 <head>
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -327,11 +328,11 @@
         <header id="header" class="absolute top-0 left-0 right-0 z-50 px-4 py-6 md:px-8">
             <div class="container mx-auto flex justify-between items-center">
                 <span class="text-white text-2xl font-bold cursor-pointer">
-                    <span class="text-3xl tracking-wide">WILSON LIVESTOCK LLC</span>
+                    <a href="index.html"><span class="text-2xl tracking-wide">WILSON LIVESTOCK LLC</span></a>
                 </span>
                 <nav class="hidden md:flex space-x-8 text-white">
-                    <span class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</span>
-                    <span class="hover:text-amber-300 transition cursor-pointer pt-2">Products</span>
+                    <a href="#our-story" class="hover:text-amber-300 transition cursor-pointer pt-2">Our Farm</a>
+                    <a href="products.html" class="hover:text-amber-300 transition cursor-pointer pt-2">Products</a>
                     <span class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</span>
                 </nav>
                 <button class="md:hidden text-white text-xl">
@@ -346,11 +347,13 @@
             <img class="absolute inset-0 w-full h-full object-cover" src="images/home-hero.jpg"
                 alt="cinematic wide angle shot of a cattle ranch at sunrise, cattle grazing in misty pastures, golden light, rustic, atmospheric" />
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-            <div class="container mx-auto px-4 md:px-8 relative z-10 text-center">
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-wider uppercase">From Field to
-                    Freezer</h1>
-                <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">Premium farm-to-table beef, raised with
-                    care on our family-owned ranch in Richfield, Utah.</p>
+            <!-- Wilson Updated Logo Overlay -->
+            <div class="absolute z-20 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-full pointer-events-none">
+                <img src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" class="max-w-[500px] w-4/5 md:w-1/2 drop-shadow-lg mb-8" style="pointer-events:none;" />
+                <div class="w-full flex flex-col items-center px-4">
+                  <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wider uppercase pointer-events-auto mt-8">From Field to Freezer</h1>
+                  <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto pointer-events-auto text-center">Premium farm-to-table beef, raised with care on our family-owned ranch in Richfield, Utah.</p>
+                </div>
             </div>
         </section>
 
@@ -420,17 +423,9 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-4xl font-bold mb-6">Our Farm</h2>
-                        <p class="text-gray-700 text-lg mb-6">For over a hundred years, the Wilson family has been committed to
-                            the highest standards of farming. Our dedication to traditional ranching methods,
-                            combined with modern sustainable practices, ensures the highest quality beef for your
-                            family.</p>
-                        <p class="text-gray-700 text-lg mb-8">Every animal on our ranch is raised with care, respect,
-                            and the attention to detail that comes from generations of farming expertise.</p>
-                        <a href="#contact"
-                            class="text-[#8B4513] font-bold inline-flex items-center hover:text-[#6B3410] transition">
-                            Learn More About Our Farm
-                            <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </a>
+                        <p class="text-gray-700 text-lg mb-6">The Wilson family has a rich history in Richfield, having been deeply rooted in the area for over a century. During that time, the family has owned and operated several farms, specializing in cattle, sheep, and the cultivation of sugar beets. This legacy of agricultural excellence continues with us, Mike and Jana, who have been managing our current farm for the past three years. We are supported by a dedicated team of farm hands and workers.</p>
+                        <p class="text-gray-700 text-lg mb-6">Our farm is strategically divided into three separate grass pastures, each fenced off to allow for rotational grazing. This method ensures that the cattle have access to fresh grass for extended periods, promoting healthier and more flavorful meat. Additionally, we maintain a fourth feeding area equipped with two large, elevated hay and corn feeders. These feeders are meticulously cleaned and serviced daily to provide a hygienic environment for our cattle.</p>
+                        <p class="text-gray-700 text-lg mb-8">Complementing our feeding and grazing systems is a separate watering area featuring large water troughs, which are also cleaned and maintained daily to ensure the well-being of our livestock. Through these practices, we uphold the high standards of farming that have been a hallmark of the Wilson family for generations!</p>
                     </div>
                     <div class="relative h-[600px]">
                         <img class="absolute inset-0 w-full h-full object-cover rounded-lg"
@@ -520,7 +515,7 @@
             <div class="container mx-auto px-4 md:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">ABOUT</h3>
+                        <h3 class="text-xl font-bold mb-4">COMPANY</h3>
                         <ul class="space-y-2">
                             <li>
                                 <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Story</span>
@@ -531,19 +526,16 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-4">SUPPORT</h3>
+                        <h3 class="text-xl font-bold mb-4">ORDERING &amp; SUPPORT</h3>
                         <ul class="space-y-2">
                             <li>
+                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Products</span>
+                            </li>
+                            <li>
+                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Order</span>
+                            </li>
+                            <li>
                                 <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Privacy Policy</span>
-                            </li>
-                            <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Terms of Service</span>
                             </li>
                         </ul>
                     </div>
@@ -573,11 +565,12 @@
 
                 <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800">
                     <div class="mb-4 md:mb-0">
-                        <img class="h-16 mb-4 p-1" src="images/logo.png" alt="cattle skull logo, minimalist design, white on transparent background" />
+                        <img class="h-24 w-auto md:h-28 mx-auto mb-8" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
                     </div>
-                    <div class="text-stone-500 text-sm">
+                    <hr class="border-t border-stone-800 my-6">
+                    <div class="text-stone-500 text-sm text-center">
                         <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
-                        <div class="flex justify-center md:justify-start mt-4 space-x-6">
+                        <div class="flex justify-center mt-4 space-x-6">
                             <span class="uppercase tracking-wider">TRUST</span>
                             <span class="uppercase tracking-wider">TRACEABLE</span>
                         </div>
