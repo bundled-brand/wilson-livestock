@@ -57,9 +57,17 @@
                     <a href="products.html" class="hover:text-amber-300 transition cursor-pointer pt-2 text-amber-300 font-bold">Products</a>
                     <a href="/products.html#order-by-phone" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</a>
                 </nav>
-                <button class="md:hidden text-white text-xl">
+                <button id="mobile-menu-button" class="md:hidden text-white text-xl">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-stone-900 bg-opacity-90 mt-4">
+                <nav class="flex flex-col items-center space-y-4 py-4 text-white">
+                    <a href="index.html#our-farm" class="hover:text-amber-300 transition cursor-pointer">Our Farm</a>
+                    <a href="products.html" class="hover:text-amber-300 transition cursor-pointer">Products</a>
+                    <a href="/products.html#order-by-phone" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-sm transition cursor-pointer">Order</a>
+                </nav>
             </div>
         </header>
 
@@ -278,7 +286,7 @@
                                     (801) 599-3525
                                 </p>
                             </div>
-                            <div>
+                            <div class="flex justify-center">
                                 <img class="h-40 w-auto md:h-40 p-1 object-contain" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
                             </div>
                         </div>
@@ -294,5 +302,15 @@
                     </div>
                 </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
