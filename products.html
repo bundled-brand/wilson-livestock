@@ -88,29 +88,35 @@
         </header>
 
         <!-- Hero Section -->
-        <section id="hero" class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="overflow: hidden;">
+        <section id="hero" class="relative h-[800px] flex items-center justify-center bg-cover bg-center"
+            style="background-image: url(''); overflow: hidden;">
             <img class="absolute inset-0 w-full h-full object-cover" src="images/home-hero.jpg"
                 alt="cinematic wide angle shot of a cattle ranch at sunrise, cattle grazing in misty pastures, golden light, rustic, atmospheric" />
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-            <div class="relative z-20 flex flex-col items-center w-full pointer-events-none">
-                <img src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" class="max-w-[350px] w-4/5 md:w-1/3 drop-shadow-lg mb-8 mt-20" style="pointer-events:none;" />
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-20 tracking-wider uppercase pointer-events-auto">Our Products</h1>
+            <!-- Wilson Updated Logo Overlay -->
+            <div class="absolute z-20 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-full pointer-events-none text-center">
+                <img src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" class="max-w-[500px] w-4/5 md:w-1/2 drop-shadow-lg mb-8" style="pointer-events:none;" />
+                <div class="max-w-3xl text-center">
+                  <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wider uppercase pointer-events-auto mt-8">From Field to Freezer</h1>
+                  <p class="text-xl md:text-2xl text-white max-w-2xl mx-auto pointer-events-auto px-4 md:px-0">Premium farm-to-table beef, raised with care on our family-owned ranch in Richfield, Utah.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section id="mission-statement" class="py-12 bg-stone-900 text-white relative -mt-24 md:mt-0">
+            <div class="container mx-auto px-4 md:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-wider">Our Products</h2>
+                <p class="text-lg md:text-xl text-stone-300">USDA-Approved 100% Black Angus Beef, fed only grass, hay, and corn.</p>
             </div>
         </section>
 
         <!-- Products List -->
-        <section class="pt-8 pb-20">
+        <section class="pt-8 pb-10 md:pb-20">
             <div class="container mx-auto px-4 max-w-3xl">
                 <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center">Available Beef Cuts</h2>
-                <div class="flex flex-wrap justify-center items-center gap-4 mb-8 text-3xl text-stone-700 font-bold">
-                    <span>USDA Approved</span>
-                    <span class="mx-2">&bull;</span>
-                    <span>100% Black Angus Beef</span>
-                    <span class="mx-2">&bull;</span>
-                    <span>Fed only Grass, Hay, and Corn</span>
-                </div>
 
-                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
                     <!-- Product Cards -->
                     <!-- For each cut, use a placeholder or available image -->
                     <li>
@@ -178,14 +184,14 @@
                         <p class="text-stone-700">Lean and flavorful, beef heart is excellent grilled, sautéed, or added to stews for extra nutrition.</p>
                     </li>
                 </div>
-                <div class="mt-10 text-center">
+                <div class="mt-10 text-center flex justify-center">
                   <p class="text-xl md:text-3xl font-semibold text-stone-800">Whole Beef 650-700 lbs., Half Beef 325 lbs., and Quarter Beef 150-165 lbs.</p>
                 </div>
             </div>
         </section>
 
         <!-- Order by Phone Section -->
-        <section id="order-by-phone" class="py-16 bg-white">
+        <section id="order-by-phone" class="pt-0 pb-16 md:py-16 bg-white">
           <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
               <!-- Image -->
@@ -302,7 +308,7 @@
         <!-- Footer -->
         <footer id="footer" class="bg-black text-white py-12">
             <div class="container mx-auto px-4 md:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 text-center md:text-left">
                     <div>
                         <h3 class="text-xl font-bold mb-4">COMPANY</h3>
                         <ul class="space-y-2">
@@ -318,25 +324,25 @@
                         <h3 class="text-xl font-bold mb-4">ORDERING & SUPPORT</h3>
                         <ul class="space-y-2">
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Our Products</span>
+                                <a href="#" class="text-stone-400 hover:text-white transition cursor-pointer">Our Products</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</span>
+                                <a href="#faqs" class="text-stone-400 hover:text-white transition cursor-pointer">FAQs</a>
                             </li>
                             <li>
-                                <span class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</span>
+                                <a href="#order-by-phone" class="text-stone-400 hover:text-white transition cursor-pointer">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="text-xl font-bold mb-4">FOLLOW</h3>
-                        <div class="flex space-x-4 mb-4">
+                        <div class="flex space-x-4 mb-4 justify-center md:justify-start">
                             <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
                                 <i class="fa-brands fa-facebook"></i>
                             </span>
-                            <span class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
+                            <a href="https://g.co/kgs/gdBZJua" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition text-xl cursor-pointer">
                                 <i class="fa-brands fa-google"></i>
-                            </span>
+                            </a>
                         </div>
                         <p class="text-stone-400">
                             Wilson Livestock LLC<br>
@@ -344,12 +350,12 @@
                             (801) 599-3525
                         </p>
                     </div>
-                    <div>
+                    <div class="flex justify-center md:justify-start">
                         <img class="h-40 w-auto md:h-40 p-1 object-contain" src="images/wilson_logo_wood_texture.svg" alt="Wilson Logo Wood Texture" />
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800">
-                    <div class="text-stone-500 text-sm">
+                    <div class="text-stone-500 text-sm text-center md:text-left">
                         <p>&copy; 2025 Wilson Livestock LLC. All rights reserved.</p>
                         <div class="flex justify-center md:justify-start mt-4 space-x-6">
                             <span class="uppercase tracking-wider">TRUST</span>
